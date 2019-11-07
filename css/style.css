@@ -6,6 +6,19 @@
   max-width: 1170px;
   margin: auto; }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px; } }
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px; } }
+
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("..fonts/ProximaNova-Semibold.eot");
@@ -29,7 +42,8 @@ body {
   padding: 17px 22px;
   font-size: 12px;
   font-weight: bold;
-  color: #507fe1; }
+  color: #507fe1;
+  background: transparent; }
 
 .button {
   padding: 25px 45px;
@@ -39,6 +53,10 @@ body {
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif; }
 
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 10px; } }
+
 .navbar {
   position: fixed;
   left: 0;
@@ -46,7 +64,6 @@ body {
   width: 100%;
   background: #fff; }
   .navbar-wrap {
-    min-height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -82,9 +99,9 @@ body {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%); }
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%); }
   .menu_active {
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
@@ -142,6 +159,26 @@ body {
   font-size: 14px;
   color: #6b6b6b; }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__lendline {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .logo {
+    display: none; }
+  .menu {
+    top: 60px;
+    height: 50%; }
+    .menu-button {
+      height: 60px; }
+    .menu__nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .menu__link {
+      margin-bottom: 20px; } }
+
 .hero {
   background: #f1f1f1 url("../img/hero_bg.png") no-repeat center top 80px;
   background-size: contain;
@@ -155,3 +192,8 @@ body {
     display: block;
     font-family: 'Proxima Nova Semibold', sans-serif;
     margin-bottom: 67px; }
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+    background-position: top left 30%; } }

@@ -7,7 +7,6 @@
 
 
     &-wrap{
-        min-height: 80px;
         display: flex;
         align-items: center;   
         justify-content: space-between; 
@@ -44,7 +43,7 @@
     width: 100%;
     background-color: #507fe1;
     transition: 0.2s;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
 
     &_active{
         transform: translateY(0%);  
@@ -103,4 +102,37 @@
         font-size: 14px;
         color: #6b6b6b;
     }
+}
+
+
+@media (max-width: 991px){
+    .navbar{
+        &__mobile, &__lendline{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        top: 60px;
+        height: 50%;
+        &-button{
+            height: 60px;
+        }
+
+        &__nav{
+            flex-direction: column;  
+        }
+        &__link{
+            margin-bottom: 20px;
+        }
+    }
+
+    
+
 }
