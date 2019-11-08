@@ -1,5 +1,6 @@
-body{
-  
+
+img{
+    max-width: 100%;
 }
 
 .section{
@@ -25,6 +26,7 @@ body{
     font-weight: bold;
     color: #507fe1;
     background: transparent;
+    text-decoration: none;
 }
 
 .button{
@@ -32,9 +34,20 @@ body{
     text-transform: uppercase;
     border: none;
     background-color: #507fe1;
+    text-decoration: none;
     color: #fff;
     @include bold;
 
+    &-fitting{
+        text-transform: uppercase;
+        color: #507fe1;
+        background-color: #fff;
+    }
+
+    &-add{
+        background-color: lighten(#507fe1, 10%);
+        color: #fff;
+    }
 }
 
 .bg-secondary{

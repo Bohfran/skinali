@@ -33,6 +33,9 @@
   font-weight: normal;
   font-style: normal; }
 
+img {
+  max-width: 100%; }
+
 .section {
   padding: 100px 0; }
   .section-title {
@@ -50,15 +53,24 @@
   font-size: 12px;
   font-weight: bold;
   color: #507fe1;
-  background: transparent; }
+  background: transparent;
+  text-decoration: none; }
 
 .button {
   padding: 25px 45px;
   text-transform: uppercase;
   border: none;
   background-color: #507fe1;
+  text-decoration: none;
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif; }
+  .button-fitting {
+    text-transform: uppercase;
+    color: #507fe1;
+    background-color: #fff; }
+  .button-add {
+    background-color: #7c9fe8;
+    color: #fff; }
 
 .bg-secondary {
   background: #f1f1f1; }
@@ -339,3 +351,120 @@
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-bottom: 50px; } }
+
+.catalog {
+  background-color: #f5f6f8; }
+  .catalog-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .catalog__card {
+    margin-bottom: 30px; }
+  .catalog-card {
+    max-width: 570px;
+    position: relative;
+    -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1); }
+    .catalog-card__buttons {
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .catalog-card__button {
+      font-size: 11px;
+      border: none;
+      text-transform: uppercase;
+      padding: 10px;
+      height: 30px; }
+    .catalog-card__tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: rgba(80, 127, 225, 0.6); }
+    .catalog-card__image {
+      display: block; }
+  .catalog__link {
+    text-align: center;
+    margin-top: 60px; }
+  .catalog__link-more {
+    display: inline-block;
+    margin-bottom: 24px; }
+  .catalog__description {
+    display: block; }
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .catalog-card {
+    max-width: 470px; } }
+
+.blog__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 70px; }
+
+.blog__title {
+  font-size: 24px;
+  font-weight: bold; }
+
+.blog__link-more {
+  color: #507fe1;
+  font-size: 16px; }
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .blog-list__image {
+    height: 200px;
+    overflow: hidden; }
+  .blog-list__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 80px; }
+  .blog-list__card {
+    margin-bottom: 20px; }
+
+.blog-card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.88);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.88); }
+
+@media (max-width: 1199px) {
+  .blog-list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .blog-list__card {
+      margin-right: 30px;
+      margin-left: 30px; } }
