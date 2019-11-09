@@ -4,16 +4,10 @@
 @import 'fonts';
 // Базові настройки
 @import 'interface';
-
-// Шапка сайта
 @import 'blocks/navbar';
-// hero
 @import 'blocks/hero';
-// offer
 @import 'blocks/offer';
-// features
 @import 'blocks/features';
-// catalog
 @import 'blocks/catalog';
-// blog
-@import 'blocks/blog-list'
+@import 'blocks/blog-list';
+@import 'blocks/price'
